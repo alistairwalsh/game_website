@@ -4,7 +4,6 @@
    <div class="container theme-showcase" role="main">
       <div class="jumbotron" style = "text-align: center;">
          <h2 style = "text-align: center;">Guessing game</h2>
-         <h2>{{Answer}}</h2>
          <form action = "{{ url_for('game') }}" method = post>
             <p>{{form.response_string}}</p>
             {{ form.hidden_tag() }}           

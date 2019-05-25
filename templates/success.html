@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container theme-showcase" role="main">
+        <div class="jumbotron" style = "text-align: center;">
+            <h1 >Guessing game</h1>
+            <h1 >{{form.response_string}}</h1>
+            <a type="button" class="btn btn-select" href="{{ url_for('game') }}">Play Again?</a>
+        </div>   
+    </div> <!-- /container -->
+{% endblock %}
